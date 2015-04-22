@@ -144,7 +144,7 @@ declare module 'gdal' {
         wkbType: number;
 
         static create(type: number): Geometry;
-        static fromWKT(wkb: Buffer, srs?: SpatialReference): Geometry;
+        static fromWKB(wkb: Buffer, srs?: SpatialReference): Geometry;
         static fromWKT(wkt: string, srs?: SpatialReference): Geometry;
 
 
