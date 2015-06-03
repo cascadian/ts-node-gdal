@@ -1,5 +1,5 @@
 /// <reference path="./gdal.d.ts" />
-import gdal = require('gdal');
+import * as gdal from 'gdal';
 
 var p = new gdal.Polygon();
 
