@@ -5,7 +5,7 @@
 
 /// <reference path='../node/node.d.ts'/>
 
-declare module 'gdal' {
+declare module Gdal {
 
     type options = Object |string[];
 
@@ -290,4 +290,9 @@ declare module 'gdal' {
     export var wkbUnknown: number;
 
 
+}
+
+declare module 'gdal'{
+  var g: typeof Gdal;
+  export = g;
 }
