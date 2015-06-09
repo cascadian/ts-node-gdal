@@ -122,7 +122,7 @@ declare module Gdal {
 
         toWKB(byte_order?: string, variant?: string): Geometry;
 
-        toWKT(): Geometry;
+        toWKT(): string;
 
         transform(transformation: CoordinateTransformation);
 
